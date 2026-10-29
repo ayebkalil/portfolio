@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "title": "9anouni AI — BITEMPORAL LEGAL RAG SYSTEM",
+    "role": "GenAI & Legal Tech / <br /> Bitemporal RAG & Retrieval",
+    "video": "demos/9anouni-ai.mp4",
+    "domain": "Sovereign GenAI & Legal Tech",
+    "badge": "95.2% Recall@5 • Sub-50ms",
+    "description": "Sovereign bilingual legal RAG architecture indexing 1,114 statutory articles with a bitemporal PostgreSQL 16 engine (GiST exclusion constraints), enabling zero-downtime historical amendment time-travel and point-in-time statutory analysis.",
+    "overview": "A sovereign bilingual (Arabic & French) legal RAG platform engineered for high-precision statutory retrieval across 1,114 Tunisian legal code articles. Built to address the critical flaws of standard RAG systems in legal domains—specifically temporal inconsistency when statutes are amended and LLM hallucinations during citation.",
+    "architecture": "Employs a bitemporal PostgreSQL 16 engine utilizing btree_gist exclusion constraints to track both assertion time (when the law was codified) and valid time (when the law was legally active), enabling exact point-in-time statutory historical time-travel without database downtime.",
+    "highlights": [
+      "Hybrid Retrieval: Fused BM25 sparse keyword matching and dense ChromaDB semantic embeddings via Reciprocal Rank Fusion (RRF), scoring 95.2% Recall@5 with under 50ms retrieval latency.",
+      "Defensive Grounding: Implemented a strict defensive grounding pipeline powered by Google Gemini, eliminating hallucinations and ensuring 100% verifiable citations to primary legal sources.",
+      "Multilingual Document OCR: Ingests complex scanned legal gazettes and court decisions using an optimized OpenCV preprocessing and Tesseract OCR pipeline."
+    ],
+    "tags": ["Python", "FastAPI", "PostgreSQL 16", "btree_gist", "ChromaDB", "BM25 / RRF", "React 19", "Google Gemini", "Docker", "Tesseract OCR"],
+    "link": "https://github.com/ayebkalil/9anouni-ai"
+  },
+  {
+    "id": 2,
+    "title": "OmniLake-GraphRAG — MULTIMODAL LAKEHOUSE & HYBRID KNOWLEDGE GRAPH",
+    "role": "Knowledge Graphs & Lakehouse / <br /> Text-to-Cypher & Semantic Cache",
+    "video": "demos/omnilake-graphrag.mp4",
+    "domain": "Financial Intelligence & GraphRAG",
+    "badge": "100% Multi-Hop Accuracy • 89.5x Cache",
+    "description": "Zero-cloud-cost financial intelligence lakehouse combining Apache Parquet on MinIO with Neo4j property graphs; fused nomic-embed-text vectors with Neo4j PageRank via RRF for multi-hop financial reasoning with a 42ms Redis vector cache.",
+    "overview": "A zero-cloud-cost financial intelligence lakehouse that bridges structured columnar data lakes with interconnected property knowledge graphs. Designed to perform complex cross-document financial synthesis across SEC 10-K filings, balance sheets, executive statements, and earnings calls without external cloud dependencies.",
+    "architecture": "Integrates Apache Parquet files on MinIO S3 object storage queried via DuckDB, coupled with a Neo4j property knowledge graph. An autonomous planner agent converts complex analytical financial queries into multi-hop Text-to-Cypher graph traversals.",
+    "highlights": [
+      "Hybrid Graph-Vector Fusion: Fuses nomic-embed-text dense embeddings with Neo4j PageRank and community centrality via Reciprocal Rank Fusion, scoring 100% accuracy on complex multi-hop cross-document queries.",
+      "RAG Triad Benchmarks: Evaluated via TruLens scoring 0.96 Faithfulness and 0.94 Relevance on complex financial question-answering.",
+      "Redis Vector Cache: Deployed an in-memory vector cache matching semantic similarity, slashing repeat query latency by 89.5× down to 42ms."
+    ],
+    "tags": ["Python", "FastAPI", "DuckDB", "Apache Parquet", "MinIO", "Neo4j", "Qdrant", "Redis Vector Cache", "React", "Docker", "Ollama"],
+    "link": "https://github.com/ayebkalil/OmniLake-GraphRAG"
+  },
+  {
+    "id": 3,
+    "title": "ArchiGen 3D — GENERATIVE AI & BIM PROCEDURAL ARCHITECTURE ENGINE",
+    "role": "Generative AI & 3D CV / <br /> Computer Vision & Procedural BIM",
+    "video": "demos/archgen-3d.mp4",
+    "domain": "Generative 3D Vision & BIM",
+    "badge": "Sub-Second 3D Synthesis • 4GB VRAM",
+    "description": "End-to-end 2D-to-3D generative architectural engine deploying MultiTask UNet++ for floorplan segmentation, Pix2Pix cGAN for facade synthesis, and TripoSR for 3D furniture mesh reconstruction on 4GB VRAM with Three.js WebGL visualization.",
+    "overview": "An end-to-end procedural generative architecture system that converts raw 2D floorplans and architectural blueprints into parametric, semantically labeled BIM geometry and photorealistic 3D structures.",
+    "architecture": "Pipelines computer vision segmentation with generative adversarial networks: MultiTask UNet++ extracts structural walls, openings, and rooms, while a Pix2Pix conditional GAN synthesizes realistic facade materials. Geometric vectorization (Douglas-Peucker & Shapely) generates clean 3D polygons rendered via Three.js.",
+    "highlights": [
+      "MultiTask UNet++: ResNet-34 backbone trained for multi-class floorplan parsing, separating structural walls, doors, windows, and room boundaries from noisy drawings.",
+      "Constrained 3D Mesh Generation: Localized TripoSR model generating 3D interior assets and furniture meshes optimized to execute smoothly within a 4GB VRAM consumer GPU ceiling.",
+      "WebGL Procedural Pipeline: Interactive Three.js client featuring Physically Based Rendering (PBR), HDRI environmental maps, real-time lighting, and DVC-tracked reproducible training pipelines."
+    ],
+    "tags": ["Python", "PyTorch (CUDA)", "FastAPI", "OpenCV", "Shapely", "Three.js (WebGL)", "Pix2Pix cGAN", "UNet++", "ONNX Runtime", "Docker", "DVC"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 4,
+    "title": "IronPulse — EDGE COMPUTER VISION KINEMATICS & WEARABLE TELEMETRY",
+    "role": "Computer Vision & IoT / <br /> Edge Kinematics & WebSockets",
+    "video": "",
+    "domain": "Edge AI & Biometrics",
+    "badge": "98.4% Accuracy • <45ms Telemetry",
+    "description": "Asynchronous biometric telemetry pipeline via Google Fit REST API and Health Connect ingesting 10,000+ daily data points, paired with in-browser 3D kinematic pose estimation (MediaPipe/WebGL) and a live 1v1 WebSocket multiplayer duel engine.",
+    "overview": "A real-time edge computer vision kinematics and health telemetry platform built to provide frictionless motion analysis and competitive athletic tracking without dedicated wearable sensors or cloud processing lag.",
+    "architecture": "Executes deep kinematic landmark estimation entirely in the client browser using Google MediaPipe and WebGL acceleration, paired with an asynchronous backend daemon synchronizing wearable biometric streams from Google Fit and Health Connect.",
+    "highlights": [
+      "In-Browser 3D Pose Estimation: Real-time joint angle calculation and repetition verification achieving 98.4% accuracy across dynamic exercise forms.",
+      "Biometric Ingestion Pipeline: Ingests 10,000+ daily telemetry records (heart rate, HRV, active calories) via Google Fit REST API and Android Health Connect to calculate daily Recovery Readiness Index (RRI).",
+      "Multiplayer Duel Arena: Real-time 1v1 WebSocket synchronization protocol delivering sub-45ms telemetry latency between competitive athletes, backed by offline-first IndexedDB resilience."
+    ],
+    "tags": ["Next.js 16", "TypeScript", "MediaPipe", "WebGL", "WebSockets", "PostgreSQL", "IndexedDB", "Google Fit API", "Health Connect"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 5,
+    "title": "MentalHealth AI — PRODUCTION DJANGO ML & RISK PREDICTION API",
+    "role": "Production ML & Backend / <br /> XGBoost & Django REST Framework",
+    "video": "demos/mental-health.mp4",
+    "domain": "Production ML & Health Tech",
+    "badge": "100% High-Risk Recall • 99.7% CV",
+    "description": "Production-ready Django backend for mental-health risk prediction benchmarking 5 ML classifiers on 10,000 records. Deployed XGBoost achieving 100% recall on high-risk individuals and 99.7% CV score with sub-50ms REST API inference, MongoDB persistence, and SHA-256 anonymization.",
+    "overview": "A production-ready Django machine learning backend engineered to assess workplace mental health risk factors and generate tailored, actionable intervention protocols based on a comprehensive benchmark of 10,000 clinical records.",
+    "architecture": "Combines a multi-model training pipeline (evaluating Logistic Regression, Random Forest, Support Vector Machines, Deep Neural Networks, and XGBoost) with a high-throughput Django REST API protected by 3-tier rate limiting and strict input validation.",
+    "highlights": [
+      "Zero False Negatives: Optimized XGBoost model achieving 100% Recall on high-risk cases and 100% F1-score with a 99.70% 5-fold cross-validation score, ensuring no critical cases are missed.",
+      "High-Performance API: Sub-50ms inference latency for single predictions and rapid batch predictions for organizational health dashboards.",
+      "Data Privacy & Compliance: MongoDB persistence via Djongo with SHA-256 subject anonymization, ensuring zero raw personally identifiable information (PII) is stored."
+    ],
+    "tags": ["Python", "Django", "Django REST Framework", "XGBoost", "Scikit-learn", "MongoDB (Djongo)", "Docker", "Gunicorn", "SHA-256"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 6,
+    "title": "Parkinson’s Prognosis — MULTIMODAL LONGITUDINAL DEEP LEARNING",
+    "role": "Clinical Deep Learning / <br /> Mixture-of-Experts & Transformers",
+    "video": "demos/parkinson.mp4",
+    "domain": "Clinical AI & Neuroimaging",
+    "badge": "MAE 5.158 pts (p=0.0224) • 5,426 Patients",
+    "description": "Longitudinal multimodal deep learning uniting clinical exams, biospecimens, and 3D SPECT/MRI imaging from 5,426 PPMI patients via a Late Gated Mixture-of-Experts transformer to forecast disease severity with Streamlit neurologist trajectory simulations.",
+    "overview": "A multimodal longitudinal deep learning prognostic model designed to forecast disease progression milestones (+12 and +24 months) in Parkinson's patients by unifying clinical assessments, biospecimen analyses, and 3D SPECT/MRI neuroimaging data.",
+    "architecture": "Features a Late Gated Mixture-of-Experts (MoE) transformer architecture that learns modality-specific representations and dynamically calculates gating weights to fuse longitudinal exam history with 3D brain imaging embeddings.",
+    "highlights": [
+      "Clinical Superiority: Significantly outperformed established temporal baselines (MAE 5.158 points, p = 0.0224) validated across 5,426 patients from the PPMI international dataset.",
+      "Trajectory Simulation: Interactive Streamlit clinical interface empowering neurologists to simulate medical intervention trajectories and receive automated alerts for high-risk deterioration.",
+      "Missing Modality Robustness: Implemented robust cross-modal imputation allowing reliable prognostic predictions even when specific biofluid or imaging markers are unavailable."
+    ],
+    "tags": ["Python", "PyTorch", "Transformers", "Mixture-of-Experts", "XGBoost", "Scikit-learn", "Streamlit", "Pandas", "PPMI Clinical Dataset"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 7,
+    "title": "SafeTravel — GLOBAL RISK & 3D GEOSPATIAL INTELLIGENCE",
+    "role": "Enterprise Full-Stack AI / <br /> WebGL 3D Globe & Spring Boot",
+    "video": "demos/safetravel.mp4",
+    "domain": "Enterprise Full-Stack & Geospatial AI",
+    "badge": "190+ Countries • Sub-100ms API",
+    "description": "Geospatial travel safety intelligence platform featuring an interactive WebGL 3D globe (Three.js) mapping live safety ratings across 190+ countries, with Google Gemini automated news ingestion and a high-concurrency Spring Boot 3 risk decay scoring engine.",
+    "overview": "A global risk intelligence platform that maps international geopolitical safety ratings, health advisories, and security alerts onto an interactive 3D globe in real time, serving global travelers and risk managers.",
+    "architecture": "High-concurrency enterprise backend built with Java 21 and Spring Boot 3, managing stateless JWT/RBAC security, automated news classification via Google Gemini API, and spatial rendering in WebGL/Three.js.",
+    "highlights": [
+      "Interactive 3D WebGL Globe: Three.js globe visualizing country safety tiers, regional conflict markers, and coordinate-specific real-time risk heatmaps with smooth 60fps interaction.",
+      "Automated Gemini News Classification: Ingests global multilingual news feeds via Google Gemini to extract entity locations, threat severity levels, and automated category tags.",
+      "Dynamic Decay Scoring Engine: Implemented continuous risk calculation with exponential time decay in Spring Boot, maintaining sub-100ms API response latency under heavy query load."
+    ],
+    "tags": ["Java 21", "Spring Boot 3", "Spring Security (JWT)", "PostgreSQL", "React 19", "Three.js (WebGL)", "Google Gemini API", "Zustand"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 8,
+    "title": "Game Analytics Engine — TELEMETRY ANOMALY & SMURF DETECTION",
+    "role": "MLOps & Predictive AI / <br /> XGBoost & Docker Microservices",
+    "video": "",
+    "domain": "MLOps & Competitive Telemetry",
+    "badge": "Precision Smurf Detection • MLflow Tracking",
+    "description": "Competitive gaming telemetry anomaly detection system engineering complex feature pipelines and training ML classification models to identify smurf accounts, with MLflow experiment tracking and Dockerized FastAPI microservices.",
+    "overview": "A high-throughput telemetry analytics and anomaly detection system engineered for competitive online gaming platforms to identify illegitimate matchmaking exploitation, smurf accounts, and abnormal skill acceleration.",
+    "architecture": "Extracts hundreds of behavioral telemetry metrics per match (APM, mouse kinematics, combat accuracy, resource accumulation slopes) and feeds them into machine learning classification pipelines packaged into Docker microservices.",
+    "highlights": [
+      "Feature Engineering Pipelines: Engineered rolling window aggregates and kinematic behavioral vectors that distinguish genuine beginners from seasoned smurf players.",
+      "High-Precision Classification: Benchmarked XGBoost and ensemble models with hyperparameter tuning to achieve high precision and low false-positive rates on smurf detection.",
+      "MLOps Experimentation: Complete lifecycle tracking with MLflow for parameter registry, model versioning, and Dockerized FastAPI microservice deployment."
+    ],
+    "tags": ["Python", "Scikit-learn", "XGBoost", "FastAPI", "MLflow", "Docker", "Pandas", "NumPy"],
+    "link": "https://github.com/ayebkalil"
+  },
+  {
+    "id": 9,
+    "title": "Arabic Transformer NER — ARABERT FINE-TUNING & BENCHMARKING",
+    "role": "NLP & Transformers / <br /> Morphological Tokenization & AraBERT",
+    "video": "",
+    "domain": "NLP Research & Transformers",
+    "badge": "91.4% Macro F1 (+8.2% Boost)",
+    "description": "End-of-studies research at FSM fine-tuning AraBERT transformer architectures on 50,000+ tokens for Arabic Named Entity Recognition (PER, ORG, LOC), achieving 91.4% macro F1-score with automated morphological tokenization pipelines.",
+    "overview": "An end-of-studies research thesis conducted at the Faculty of Sciences of Monastir (FSM) addressing the acute morphological complexity, rich dialectal variation, and lack of capitalization in Arabic Named Entity Recognition.",
+    "architecture": "Integrates a custom Arabic text preprocessing pipeline incorporating Farasa morphological segmentation and diacritic normalization, fine-tuning pretrained AraBERT transformer architectures on 50,000+ domain-specific annotated tokens.",
+    "highlights": [
+      "AraBERT Fine-Tuning: Achieved a 91.4% macro F1-score across Person, Organization, and Location entities—an 8.2% boost over standard multilingual BERT baselines.",
+      "Morphological Tokenization: Solved complex clitic attachment issues in Arabic morphology through specialized subword tokenization, vastly improving boundary detection precision.",
+      "Curated Benchmark Evaluation: Conducted comprehensive error classification and ablation experiments across diverse news and statutory Arabic corpora."
+    ],
+    "tags": ["Python", "PyTorch", "Hugging Face Transformers", "AraBERT", "Farasa Segmenter", "Scikit-learn", "Pandas"],
+    "link": "https://github.com/ayebkalil"
+  }
+]
