@@ -7,7 +7,7 @@
     "predev": "node scripts/predev.js",
     "dev": "vite src --port 3000",
     "prebuild": "node scripts/predev.js",
-    "build": "vite build src",
+    "build": "vite build src && node scripts/assemble-videos.js",
     "preview": "vite preview"
   },
   "keywords": [],

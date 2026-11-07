@@ -1,0 +1,32 @@
+{
+  "archgen-3d": {
+    "sha256": "0049f51b93250ff4523cef75a7fb5d63b7af18172a57da6aa322d3f699e58e97",
+    "bytes": 26310247,
+    "parts": [
+      "000.part",
+      "001.part",
+      "002.part",
+      "003.part",
+      "004.part",
+      "005.part",
+      "006.part",
+      "007.part",
+      "008.part",
+      "009.part",
+      "010.part",
+      "011.part",
+      "012.part"
+    ]
+  },
+  "parkinson": {
+    "sha256": "1c4bdceab5d544c7cf43aa6c41a81a286c509d8a8ff7d9a2f29d601a977300cf",
+    "bytes": 9286119,
+    "parts": [
+      "000.part",
+      "001.part",
+      "002.part",
+      "003.part",
+      "004.part"
+    ]
+  }
+}
